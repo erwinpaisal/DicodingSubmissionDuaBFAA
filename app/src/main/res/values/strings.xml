@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">SubDua</string>
+    <string name="username">Username</string>
+    <string name="name">Name</string>
+    <string name="location">Location : %s </string>
+    <string name="repository">Repository : %s </string>
+    <string name="company">Company : %s </string>
+    <string name="followers">Followers</string>
+    <string name="following">Following</string>
+    <string name="avatar">Avatar</string>
+    <string name="languange_change_set">Change Language Settings</string>
+    <string name="todo">todo</string>
+    <string name="credit">Erwin Paisal</string>
+    <string name="web">https://erwinpaisal.github.io</string>
+</resources>

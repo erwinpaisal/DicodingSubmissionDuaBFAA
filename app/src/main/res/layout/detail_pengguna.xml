@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Gein"
+    tools:context=".activity.DetailPengguna"
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="135dp"
+        android:layout_height="135dp"
+        android:id="@+id/avatar_detail"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:civ_border_color="#70d6ff"
+        app:civ_border_width="2dp"
+        tools:ignore="MissingConstraints"
+        />
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/username_detail"
+        android:text="@string/username"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/avatar_detail"
+        />
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/name_detail"
+        android:text="@string/name"
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username_detail"
+        />
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/repository_detail"
+        android:text="@string/repository"
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name_detail"
+        />
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/company_detail"
+        android:text="@string/company"
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/repository_detail"
+        />
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/location_detail"
+        android:text="@string/location"
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/tabss"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/company_detail"
+        />
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tabss"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="17dp"
+        android:background="@color/Gein"
+        android:minHeight="?actionBarSize"
+        app:layout_constraintTop_toBottomOf="@+id/location_detail"
+        app:tabIndicatorFullWidth="false"
+        app:tabIndicatorHeight="3dp"
+        app:tabMode="fixed"
+        app:tabRippleColor="@null"
+        tools:ignore="MissingConstraints"
+        />
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/view_page"
+        android:background="@color/whites"
+        android:layout_marginTop="375dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
